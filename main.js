@@ -1,0 +1,1 @@
+const screen1 = document.querySelector('.screen1')

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bgc-button: hsl(240, 81%, 71%);
+
+  --color-button: hsl(0, 0%, 100%);
+  --color-h1: hsl(238, 27%, 28%);
+
+  --ff-h1: 'Montserrat', 'sans-serif';
+  --ff-p: 'DM Sans', 'sans-serif';
+
+  --fs-h1: 2.4rem;
+  --fs-p: 1.6rem;  
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  background: linear-gradient(287.56deg, hsl(199, 88%, 87%) 0%, hsl(217, 96%, 81%) 100%);
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  color: var(--color-h1);
+ 
+  margin-top: -12rem;
+
+  width: min(42.8rem, 90%);
+  
+  background-color:  hsl(0, 0%, 100%);
+  box-shadow: 0px .2rem .4rem hsla(0, 0%, 0%, 0.1);
+  border-radius: .6rem;
+}
+
+main h1 {
+  font-family: var(--ff-h1);
+  font-size: var(--fs-h1);  
+}
+
+main p {
+  font-family: var(--ff-p);
+  font-size: var(--fs-p);
+  
+  text-align: center;
+
+  margin-top: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    
+  margin-top: 4.8rem;
+}
+
+input, button {
+  border: none;
+  height: 53px;
+  font-family: var(--ff-p);
+  font-size: var(--fs-p);
+  font-weight: 700;
+  padding: 1.6rem;  
+}
+
+input {
+  width: 7rem;    
+  background: hsl(212, 23%, 89%);
+  border-radius: .4rem 0 0 .4rem;
+}
+
+button {
+  width: 9.5rem;
+  color: var(--color-button);
+  background-color: var(--bgc-button); 
+  border-radius: 0 .4rem .4rem 0;
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background-color: hsl(240, 59%, 57%);
+}
+
+/* screen2 */
+h2 {
+  font-family: var(--ff-p);
+  font-size: var(--fs-h1);
+  font-weight: 400;
+  
+  text-align: center; 
+}
+
+.screen2 button {
+  width: 16.5rem;
+  margin: 3.3rem 12rem auto;
+  border-radius: .4rem;
+  padding: 0;  
+}
